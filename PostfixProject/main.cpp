@@ -13,7 +13,7 @@ int main(){
 	cin >> inputs;			
 	string vecnumber;			//used for converting char to string
 
-	for (int i = 0; i < 15; i++)
+	for (int i = 0; i < strlen(inputs); i++)
 	{
 		//if between 'A' to 'z' on ascii, ask user for value of variable, then add to vector
 		if (inputs[i] >= 'A' && inputs[i] <= 'z') { 
