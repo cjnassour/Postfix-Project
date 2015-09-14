@@ -53,6 +53,12 @@ int main(){
 				answer.pop_back();								//delete last element
 				answer.end()[-1] = product;						//assign last element to product
 			}
+		else if (inputs[i] == '-')	//subtraction
+			{ 
+				int diff = answer.back() - answer.end()[-2];	//last - 2nd to last element
+				answer.pop_back();								//delete last element
+				answer.end()[-1] = diff;						//assign last element to product
+			} 
 
 	}
 	
